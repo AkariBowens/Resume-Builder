@@ -1,0 +1,30 @@
+.sliderButton {
+  display: flex;
+  flex-direction: column;
+
+  width: 35px;
+  height: 100vh;
+  background-color: antiquewhite;
+  color: red;
+  border: 1px solid black;
+
+  font-size: 17px;
+
+  /* margin: 0px auto 0px auto; */
+}
+
+.sliderTitle {
+  display: flex;
+  flex-direction: row;
+
+  width: 100px;
+
+  margin: auto 0px auto 0px;
+}
+
+.sliderTitle > p {
+  transform: rotate(90deg);
+  background-color: aqua;
+
+  padding: 5px;
+}
