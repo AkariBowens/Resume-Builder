@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: row;
 
-  /* width: 300px; */
+  width: 300px;
   height: 100vh;
 }
 
-/* .questions--slider__personal {
-  /* display: flex;
-  flex-direction: column;
+.questions--slider__personal {
+  display: flex;
+  flex-direction: row;
 
-  width: 35px;
+  width: 250px;
   height: 100vh;
-  background-color: beige; 
-}*/
+  background-color: beige;
+}
 
 .questions--slider__education {
   display: flex;
@@ -27,7 +27,7 @@
 
 .questions--slider__employment {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   width: 35px;
   height: 100vh;
@@ -54,7 +54,7 @@
   outline: none;
 }
 
-.slider--button {
+.sliderButton {
   transform: rotate(90deg);
 
   text-decoration: none;

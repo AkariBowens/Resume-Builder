@@ -12,6 +12,7 @@ import { useState } from "react";
 
 function QuestionsSlider() {
   const [showSlider, setShowSlider] = useState(true);
+  // const [showEducation, setShowEducation] = useState(true);
 
   return (
     <div className="questions--slider--section">
@@ -19,27 +20,39 @@ function QuestionsSlider() {
       {/* transform */}
       {/* header links to components */}
       <div className="questions--slider__personal">
-        {/* <Header /> */}
-        {/* <h2>Hello</h2> */}
-        {/* <Button variant="contained">Personal</Button> */}
-        {/* <button className="personal slider--button">Personal</button> */}
-        <SliderButton title="Personal"></SliderButton>
+        {/* <Personal /> */}
+        {showSlider && <Personal />}
+        {/* <SliderButton
+          title="Personal"
+          onClick={() => setShowSlider(!showSlider)}
+        > */}
+        <Button
+          className="sliderButton"
+          onClick={() => setShowSlider(!showSlider)}
+        >
+          Personal
+        </Button>
+        {/* </SliderButton> */}
         {/* <button>Employment</button>
         <button>Education</button>
         <button>Skills</button> */}
         {/* {showSlider && <Personal />}
         <button
-          onClick={() => setShowSearch(!showSearch)}
+          onClick={() => setShowSlider(--buttonpressed)}
           className="banner__searchButton"
           variant="outlined"
         >
           {showSearch ? "Personal" : "Search Dates"}
         </button> */}
       </div>
-      {/* <div className="questions--slider__education">
-        <button className="education slider--button">education</button>
-      </div>
-      <div className="questions--slider__employment">
+      {/* <div className="questions--slider__education"> */}
+      {/* {showSlider && <Education />} */}
+      {/* <SliderButton
+          title={"Education"}
+          onClick={() => setShowEducation(!showEducation)}
+        ></SliderButton> */}
+      {/* </div> */}
+      {/*<div className="questions--slider__employment">
         <button className="employment slider--button">employment</button>
       </div>
       <div className="questions--slider__skills">
